@@ -1,0 +1,14 @@
+<div *ngFor="let p of products; index as productId">
+  <h3>
+    <a [title]="p.name + ' details'" [routerLink]="['/products', productId]">
+      {{ p.name }}
+    </a>
+  </h3>
+<button (click)="share()">Share</button>
+  <!-- <app-product-details [product]="p" (notify)="onNotify()"></app-product-details> -->
+</div>
+
+
+
+
+<!-- *ngFor,*ngIf,PropertyBinding[],interpolation{{}},event Handeling-->
